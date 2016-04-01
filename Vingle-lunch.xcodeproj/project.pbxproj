@@ -16,6 +16,8 @@
 		1EA760B51CABDC1400216BA7 /* Vingle_lunchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EA760B41CABDC1400216BA7 /* Vingle_lunchUITests.swift */; };
 		1EA760C31CABDC6600216BA7 /* vingle_logo_nobeta.svg in Resources */ = {isa = PBXBuildFile; fileRef = 1EA760C21CABDC6600216BA7 /* vingle_logo_nobeta.svg */; };
 		1EA760C51CABEEA600216BA7 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EA760C41CABEEA600216BA7 /* HomeViewController.swift */; };
+		616AFDD51CAE511700462204 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 616AFDD41CAE511700462204 /* Podfile */; };
+		78186CD61D3F58B3DFA9D735 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45F95D98393576C00695799F /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0B425AD12A2538A4B75BBCE3 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		1E16E33F1CACDEE500307F2A /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		1EA760911CABDC1400216BA7 /* Vingle-lunch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Vingle-lunch.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1EA760941CABDC1400216BA7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -51,6 +54,9 @@
 		1EA760B61CABDC1400216BA7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1EA760C21CABDC6600216BA7 /* vingle_logo_nobeta.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = vingle_logo_nobeta.svg; path = ../../../balmbees/app/assets/images/svg/vingle_logo_nobeta.svg; sourceTree = "<group>"; };
 		1EA760C41CABEEA600216BA7 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		45F95D98393576C00695799F /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		46F3678395EB6D1C3F3EE13E /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		616AFDD41CAE511700462204 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				78186CD61D3F58B3DFA9D735 /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,13 +85,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0E34F2701966ACBF755812AC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0B425AD12A2538A4B75BBCE3 /* Pods.debug.xcconfig */,
+				46F3678395EB6D1C3F3EE13E /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		1EA760881CABDC1400216BA7 = {
 			isa = PBXGroup;
 			children = (
+				616AFDD41CAE511700462204 /* Podfile */,
 				1EA760931CABDC1400216BA7 /* Vingle-lunch */,
 				1EA760A81CABDC1400216BA7 /* Vingle-lunchTests */,
 				1EA760B31CABDC1400216BA7 /* Vingle-lunchUITests */,
 				1EA760921CABDC1400216BA7 /* Products */,
+				0E34F2701966ACBF755812AC /* Pods */,
+				45FE295A10EC953172DF315D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -131,6 +150,14 @@
 			path = "Vingle-lunchUITests";
 			sourceTree = "<group>";
 		};
+		45FE295A10EC953172DF315D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				45F95D98393576C00695799F /* Pods.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -138,9 +165,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1EA760B91CABDC1400216BA7 /* Build configuration list for PBXNativeTarget "Vingle-lunch" */;
 			buildPhases = (
+				92F3510F288669CB8F73CA81 /* Check Pods Manifest.lock */,
 				1EA7608D1CABDC1400216BA7 /* Sources */,
 				1EA7608E1CABDC1400216BA7 /* Frameworks */,
 				1EA7608F1CABDC1400216BA7 /* Resources */,
+				B50D6BCE8AB7D8719C3F5AF6 /* Embed Pods Frameworks */,
+				E8F2BCB8252A9B4097DA1877 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -237,6 +267,7 @@
 			files = (
 				1EA7609F1CABDC1400216BA7 /* LaunchScreen.storyboard in Resources */,
 				1EA760C31CABDC6600216BA7 /* vingle_logo_nobeta.svg in Resources */,
+				616AFDD51CAE511700462204 /* Podfile in Resources */,
 				1EA7609A1CABDC1400216BA7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -256,6 +287,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		92F3510F288669CB8F73CA81 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B50D6BCE8AB7D8719C3F5AF6 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E8F2BCB8252A9B4097DA1877 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1EA7608D1CABDC1400216BA7 /* Sources */ = {
@@ -407,6 +486,7 @@
 		};
 		1EA760BA1CABDC1400216BA7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0B425AD12A2538A4B75BBCE3 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Vingle-lunch/Info.plist";
@@ -418,6 +498,7 @@
 		};
 		1EA760BB1CABDC1400216BA7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 46F3678395EB6D1C3F3EE13E /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Vingle-lunch/Info.plist";
